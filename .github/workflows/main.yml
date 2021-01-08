@@ -1,0 +1,32 @@
+name: Node.js CI - Nathan Nesbitt
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Node.js Version - ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install Node
+      run: npm install
+
+    # Checks the server files to see if they are working (no function checks)
+    - name: Test Node
+      run: node Assignment4.js
+    
+    # Kills MySQL
+    - name: Start Ubuntu MySQL
+      run: sudo service mysql start
+    # Runs the command
+    - name: Run provided SQL
+      run: mysql -u root -p'root' < Assignment4.SQL
