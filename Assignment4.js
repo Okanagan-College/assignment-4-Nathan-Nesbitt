@@ -9,7 +9,7 @@ const mysql = require("mysql");
 const bodyParser = require('body-parser');
 
 // Create our express application //
-const app = express();
+const app = express(); 
 
 // Sets it so we can use ejs as our template engine //
 
