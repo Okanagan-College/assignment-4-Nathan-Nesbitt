@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1>Add Contact</h1>
+                <form method="POST" action="create_contact">
+                    <input name="name" type="text" placeholder="Name">
+                    <input name="email" type="email" placeholder="Email">
+                    <input name="phone" type="tel" placeholder="Phone">
+                    <input name="notes" type="text" placeholder="Notes">
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <section>
+                <h1>Contacts</h1>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>Note</th>
+                    </tr>
+                    <% people.forEach(person => { %>
+                    <tr>
+                        <td><%= person.name %></td>
+                        <td><%= person.email %></td>
+                        <td><%= person.phone %></td>
+                        <td><%= person.notes %></td>
+                    </tr>
+                    <% }) %>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>

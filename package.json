@@ -1,0 +1,24 @@
+{
+  "name": "assignment-4-nathan-nesbitt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Assignment4.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Okanagan-College/assignment-4-Nathan-Nesbitt.git"
+  },
+  "author": "Nathan Nesbitt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Okanagan-College/assignment-4-Nathan-Nesbitt/issues"
+  },
+  "homepage": "https://github.com/Okanagan-College/assignment-4-Nathan-Nesbitt#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
