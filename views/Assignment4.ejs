@@ -24,12 +24,14 @@
                         <th>Phone Number</th>
                         <th>Note</th>
                     </tr>
+                    <% people.forEach(person => { %>
                     <tr>
-                        <td>Nathan</td>
-                        <td>nathan@nathan.ca</td>
-                        <td>123456789</td>
-                        <td>Woah! A cool note!</td>
+                        <td><%= person.name %></td>
+                        <td><%= person.email %></td>
+                        <td><%= person.phone %></td>
+                        <td><%= person.notes %></td>
                     </tr>
+                    <% }) %>
                 </table>
             </section>
         </main>
