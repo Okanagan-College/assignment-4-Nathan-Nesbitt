@@ -1,1 +1,37 @@
-<!-- THIS IS THE HOMEPAGE THAT YOU WILL SERVE UP -->
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1>Add Contact</h1>
+                <form method="POST" action="create_contact">
+                    <input name="name" type="text" placeholder="Name">
+                    <input name="email" type="email" placeholder="Email">
+                    <input name="phone" type="tel" placeholder="Phone">
+                    <input name="notes" type="text" placeholder="Notes">
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <section>
+                <h1>Contacts</h1>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>Note</th>
+                    </tr>
+                    <tr>
+                        <td>Nathan</td>
+                        <td>nathan@nathan.ca</td>
+                        <td>123456789</td>
+                        <td>Woah! A cool note!</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>
